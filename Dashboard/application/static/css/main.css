@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  background: rgb(0, 0, 0);
+}
+
+h1 {
+    color:white
+}
+
+footer p {
+    color:white
+}
+nav a{
+    color:white
+}
