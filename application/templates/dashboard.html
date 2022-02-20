@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block head %}
-<title>{{user}} | Dashboard</title>
+<title>{{username}} | Dashboard</title>
 {% endblock %}
 
 {% block content %}
@@ -10,14 +10,12 @@
     Dashboard
 </h1>
 
+<p>Date/Time: <span id="datetime"></span></p>
+
 <script>
-    n = new Date();
-    y = n.getFullYear();
-    m = n.getMonth() + 1;
-    d = n.getDate();
-    document.getElementById("date").innerHTML = "Last Updated:" + m + "/" + d + "/" + y;
+    var dt = new Date();
+    document.getElementById("datetime").innerHTML = (("0" + (dt.getMonth() + 1)).slice(-2)) + "/" + (("0" + dt.getDate()).slice(-2)) + "/" + (dt.getFullYear()) + " " + (("0" + dt.getHours() + 1).slice(-2)) + ":" + (("0" + dt.getMinutes() + 1).slice(-2));
 </script>
-<p id="date"></p>
 
 <!-- Insert template code -->
 
