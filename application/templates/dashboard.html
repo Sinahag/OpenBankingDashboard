@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block head %}
+<title>{{user}} | Dashboard</title>
+{% endblock %}
+
+{% block content %}
+
+<h1>
+    Dashboard
+</h1>
+
+<script>
+    n = new Date();
+    y = n.getFullYear();
+    m = n.getMonth() + 1;
+    d = n.getDate();
+    document.getElementById("date").innerHTML = "Last Updated:" + m + "/" + d + "/" + y;
+</script>
+<p id="date"></p>
+
+<!-- Insert template code -->
+
+{% endblock %}
