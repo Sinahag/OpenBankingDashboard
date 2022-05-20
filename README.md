@@ -1,4 +1,4 @@
-# Open Banking Dashboard
+# Open Banking Dashboard - Storm Hacks
 
 Stonks is seeking to create clarity in millenials finances across their entire financial history. Permitting individuals to access their entire financial record across different financial institutions and even countries!
 
